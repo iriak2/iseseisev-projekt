@@ -1,4 +1,5 @@
 let kelleKord = "X";
+let alustaja = "X";
 let voit = 0;
 let xid = [];
 let oid = [];
@@ -152,4 +153,56 @@ function kasVoitis(){
             voit = 4;
         }
     }
+}
+//katse
+let punktX = 0;
+let punktO = 0;
+function lopp(){
+    if(voiduteade == 0){
+        if(voit == 1){
+            window.alert("X võitis!");
+            voiduteade = 1;
+            punktX += 1;
+        } else if(voit == 2){
+            window.alert("O võitis!");
+            voiduteade = 1;
+            punktO += 1;
+        } else if(voit == 4){
+            window.alert("Viik!");
+            voiduteade = 1;
+        }
+    }
+}
+
+function uusmang(){
+    xid.splice(0, xid.length);
+    oid.splice(0, oid.length);
+    document.getElementById("1").textContent = "";
+    document.getElementById("2").textContent = "";
+    document.getElementById("3").textContent = "";
+    document.getElementById("4").textContent = "";
+    document.getElementById("5").textContent = "";
+    document.getElementById("6").textContent = "";
+    document.getElementById("7").textContent = "";
+    document.getElementById("8").textContent = "";
+    document.getElementById("9").textContent = "";
+    voit = 0;
+    voiduteade == 0;
+    
+    document.getElementById('1').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('2').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('3').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('4').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('5').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('6').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('7').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('8').style.backgroundColor = 'rgb(56, 97, 97)';
+    document.getElementById('9').style.backgroundColor = 'rgb(56, 97, 97)';
+    if(alustaja == "X"){
+        alustaja = "O";
+    }else if(alustaja == "O"){
+        alustaja = "X";
+    }
+    kelleKord = alustaja;
+    document.getElementById("punktid").textContent = punktX+" - "+punktO;
 }
