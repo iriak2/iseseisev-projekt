@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    background-color: darkslategrey;
+}
+
+#alus{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    background-color: rgb(56, 97, 97);
+    border: 5px solid black;
+}
+
+.ruut{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parem-aar{
+    border-right: 5px solid black;
+}
+
+.alumine-aar{
+    border-bottom: 5px solid black;
+}
+
+#mangijad{
+    font-size: 20px;
+}
+
+#punktid{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#link{
+    position: relative;
+    bottom: 1%;
+}
+
+#nimed{
+    position: relative;
+    bottom: 2%;
+}
