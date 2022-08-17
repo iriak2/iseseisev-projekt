@@ -1,8 +1,6 @@
 
 # Trips-Traps-Trull
 
-A brief description of what this project does and who it's for
-
 
 ## Autorid
 
